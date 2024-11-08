@@ -1,0 +1,316 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   
+}
+
+
+body {
+    background: #fafafa;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header span {
+    font-size: 32px;
+    color: #ffff;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #ffff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.iconsidebar {
+    display: none;
+}
+
+main {
+    padding-top: 80px;
+}
+
+
+.about{
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.aboutwrap{
+    display: flex;
+}
+
+.abouttxt {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.abouttxt h1{
+    margin-left: 15%;
+    padding-top: 15%;
+    margin-bottom: 5%;
+    color: black;
+}
+
+.abouttxt p{
+    margin-left: 15%;
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.aboutimg {
+    width: 50%;
+}
+
+.buttonabout{
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+    text-decoration: none;
+    background: seagreen;
+    color: #fafafa;
+    border-radius: 5px;
+    margin-left: 15%;
+}
+
+.aboutimg img {
+    width: 50%;
+    height: fit-content;
+    border-radius: 16px;
+    margin-left: 25%;
+}
+
+.section {
+    color: black;
+}
+
+.box1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    border-radius: 5px;
+    /* height: 290px; */
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px 5px 0 0;
+  }
+
+.container {
+    padding: 2px 8px;
+  }
+
+.wrapper {
+    display: flex;
+    gap: 16px;
+    margin: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+    text-decoration: none;
+    background: #2e8b57;
+    color: #fafafa;
+    border-radius: 5px;
+    margin-left: 200px;
+}
+
+footer {
+    width: 100%;
+    background-color: seagreen;
+    /* height: 100%; */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.boxform {
+    width: 300px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* margin-left: 530px; */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
+.boxform p {
+    font-size: 12px;
+}
+
+div h1 {
+    color: #fafafa;
+}
+
+.boxform .box {
+    height: 24px;
+    width: calc(100% - 10px);
+}
+
+.boxform .btnsubmit {
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background: seagreen;
+    color: #fafafa;
+    border-radius: 5px;
+}
+
+/* Media Query (768px) */
+@media (max-width: 768px) {
+    .header {
+        padding: 20px 40px;
+    }
+
+    .header span {
+        font-size: 28px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .aboutwrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .abouttxt {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .abouttxt h1 {
+        margin-left: 0;
+        padding-top: 10%;
+        text-align: center;
+    }
+
+    .abouttxt p {
+        margin-left: 0;
+    }
+
+    .aboutimg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutimg img {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .buttonabout {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .boxform {
+        width: 90%;
+    }
+}
+
+/* Media Query (480px) */
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .header span {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .iconsidebar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .about{
+        padding-top: 0;
+    }
+
+    .abouttxt h1 {
+        font-size: 20px;
+        padding-top: 5%;
+    }
+
+    .abouttxt p {
+        font-size: 14px;
+    }
+
+    .aboutimg img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .buttonabout {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .box1 {
+        width: 90%;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+    .boxform {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .boxform .btnsubmit {
+        padding: 8px;
+    }
+
+    footer {
+        padding: 10px 0;
+    }
+}

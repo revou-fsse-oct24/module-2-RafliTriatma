@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Visby-Round-CF", sans-serif;
+}
+
+body {
+    background: #fafafa;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header span {
+    font-size: 32px;
+    color: #ffff;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #ffff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.iconsidebar {
+    display: none;
+}
+
+.galeri-photos{
+    margin-top: 100px;
+}
+
+.grid-photos {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 200px 90px 200px;
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-areas: 
+    'photo1 photo1 photo3'
+    'photo2 photo2 photo3'
+    'photo2 photo2 photo3';
+    gap: 10px;
+    padding: 0 4rem 0 4rem;
+    margin-top: 2rem;
+    
+}
+
+.photos1{
+    background-image: url("./assets/image/poto1.jpeg");
+    grid-area: photo1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.photos1:hover {
+    transform: scale(1.02);
+    transition-duration: 200;
+}
+
+.photos2{
+    background-image: url("./assets/image/photo2.jpeg");
+    grid-area: photo2;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.photos2:hover {
+    transform: scale(1.02);
+    transition-duration: 200;
+}
+
+.photos3{
+    background-image: url("./assets/image/buildingcompany.jpeg");
+    grid-area: photo3;
+    background-size: cover;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.photos3:hover {
+    transform: scale(1.02);
+    transition-duration: 200;
+}
