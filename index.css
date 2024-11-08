@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;   
+    font-family: Poppins;   
 }
 
 
@@ -136,6 +136,84 @@ img {
     color: #fafafa;
     border-radius: 5px;
     margin-left: 200px;
+}
+
+.package {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.pk-wrap {
+    display: flex;
+}
+
+.pk-txt {
+    width: 50%;
+    /* background-color: aqua; */
+    height: 100%;
+    padding: 20px;
+}
+
+.pk-txt h1 {
+    margin-left: 6rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.pk-txt p {
+    margin-left: 6rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+.pk-img {
+    width: 50%;
+    /* background-color: #6959c2; */
+    /* margin-right: 6rem; */
+    /* padding-top: 2rem; */
+}
+
+.pk-grid {
+    display: grid;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    gap: 1rem;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 20rem 10rem;
+    grid-template-areas: 
+    'pk1 pk2'
+    'pk1 pk2'
+    'pk1 pk3';
+}
+
+.pk-grid-img1 {
+    /* background-color: aqua; */
+    grid-area: pk1;
+    background-image: url(./assets/image/photo2.jpeg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.pk-grid-img2 {
+    /* background-color: aquamarine; */
+    grid-area: pk2;
+    background-image: url(./assets/image/pinkbeach.jpeg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.pk-grid-img3 {
+    /* background-color: bisque; */
+    grid-area: pk3;
+    background-image: url(./assets/image/santamonica.jpg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
 }
 
 footer {
