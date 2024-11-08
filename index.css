@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .header span {
@@ -45,6 +46,32 @@ main {
     padding-top: 80px;
 }
 
+.cr-img1 {
+    background-image: url(./assets/image/carousel1.jpg);
+    background-size: cover;
+    height: 35rem;
+}
+
+.animate-txt .break {
+    width: 30rem;
+}
+
+.animate-txt {
+    padding-top: 18rem;
+}
+
+.animate-txt h1, .animate-txt p{
+    position: relative;
+    animation-name: animate1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate1 {
+    0%   {left:-900px; top:0px;}
+    100%  { left:100px; top:0px;}
+  }
 
 .about{
     padding-bottom: 50px;
