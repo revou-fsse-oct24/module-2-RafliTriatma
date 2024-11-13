@@ -58,7 +58,7 @@
                 <div class="animate-txt">
                     <ul>
                         <li style="list-style: none;"><p style="color: white;">10 Nov - 15 Nov 2024</p></li>
-                        <li style="list-style: none;"><h1 class="break" style="font-weight: 400; font-size: 3rem;">Family Holiday Offers up to 30%</h1></li>
+                        <li style="list-style: none;"><h1 class="break" style="font-weight: 400; font-size: 3rem; color: white;">Family Holiday Offers up to 30%</h1></li>
                     </ul>
                 </div>
             </div>
@@ -153,38 +153,44 @@
     </main>
 
     <footer>
-        
-        <br/>
-        <div>
-            <h1 style="text-align: center; text-shadow: 2px 2px 2px #154f2e;">Contact Us</h1> <br>
-        </div>
 
-        <section class="boxform">
-            
+        <section class="wrapper-boxform">
+            <h1 style="text-align: center; color: white;">Contact Us</h1>
+            <div class="boxform">
             <form action="" method="post">
                 
-                <p>Name</p>
-                <input class="box" type="text" placeholder="Input your Name"> <br/> <br/>
-
-                <p>Email</p>
-                <input class="box" type="email" placeholder="Input your Email"> <br/> <br/>
-
-                <p> Gender</p>
-                <input type="radio" name="gender" id="male">
-                <label for="gender" style="font-size: 12px;">Male</label>
-                <input type="radio" name="gender" id="female">
-                <label for="gender" style="font-size: 12px;">Female</label>
+                <p style="color: white;">Name</p>
+                 <div class="input-box">
+                    <input type="text" placeholder="Input your Name"> <br/> <br/>
+                 </div>
                 
-                <br/> <br/>
-                <p>Comment</p>
-                <textarea name="comment" id="comment" placeholder="Input your Comment" style="width: 100%; height: 40px;"></textarea>
+
+                <p style="color: white;">Email</p>
+                <div class="input-box">
+                    <input type="email" placeholder="Input your Email"> <br/> <br/>
+                </div>
+                
+
+                <p style="color: white;"> Gender</p>
+                <div class="radio-gender">
+                    <input type="radio" name="gender" id="male">
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="gender">Female</label>
+                </div>
+                
+                <p style="color: white;">Comment</p>
+                <div class="input-comment">
+                    <textarea name="comment" id="comment" placeholder="Input your Comment"></textarea>
+                </div>
+                
                 
                 <br/> <br/>
                 <input class="btnsubmit" type="submit" value="Submit">
 
             </form>
-
-        </section> <br/>
+        </div>
+        </section>
 
     </footer>
 </body>
