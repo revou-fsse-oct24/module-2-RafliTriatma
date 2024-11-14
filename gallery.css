@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .header span {
@@ -95,4 +96,102 @@ body {
 .photos3:hover {
     transform: scale(1.02);
     transition-duration: 200;
+}
+
+.wrapper-boxfooter {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./assets/image/footer.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    /* height: 100%; */
+    padding: 10px 0;
+    display: flex;
+    /* justify-content: end; */
+    margin-top: 10vh;
+}
+
+.box-footer {
+    /* background-color: #2e8b57; */
+    width: 50%;
+}
+
+.footer-link {
+    margin-left: 12vh;
+    color: white;
+    padding-top: 4vh;
+}
+
+.box-boxform {
+    width: 50%;
+    margin-right: 30vh;
+    margin-top: 4vh;
+}
+
+
+.boxform {
+    width: 90%;
+    background: transparent;
+    border: 2px solid rgb(208, 208, 208);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    margin: 20vh;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+
+.boxform .input-box {
+    width: 100%;
+    height: 6vh;
+    margin: 2vh 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+.box1 .input-comment{
+    width: 100%;
+    height: 10vh;
+}
+
+.input-comment textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px 20px 20px;
+}
+
+.input-comment textarea::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+.boxform .btnsubmit {
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background: seagreen;
+    color: #fafafa;
+    border-radius: 5px;
+    border: none;
 }

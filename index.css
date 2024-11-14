@@ -243,28 +243,44 @@ img {
     box-shadow: 3px 3px 2px #dfdede;
 }
 
-footer {
+.wrapper-boxfooter {
     width: 100%;
-    background-image: url(./assets/image/footer.jpg);
+    height: 80vh;
+    background-image: url(./assets/image/footer.jpeg);
     background-size: cover;
+    background-position: bottom;
     /* height: 100%; */
     padding: 10px 0;
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
+}
+
+.box-footer {
+    /* background-color: #2e8b57; */
+    width: 50%;
+}
+
+.footer-link {
+    margin-left: 12vh;
+    color: white;
+    padding-top: 4vh;
+}
+
+.box-boxform {
+    width: 50%;
+    margin-right: 30vh;
+    margin-top: 4vh;
 }
 
 
 .boxform {
-    width: 300px;
+    width: 90%;
     background: transparent;
-    border: 2px solid white;
+    border: 2px solid rgb(208, 208, 208);
     backdrop-filter: blur(20px);
-    justify-content: center;
-    flex-direction: column;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20vh;
     border-radius: 10px;
-    margin-right: 4vh;
     margin-top: 2vh;
 }
 
@@ -280,27 +296,16 @@ footer {
     background: transparent;
     border: none;
     outline: none;
-    border: 1px solid white;
+    border: 1px solid rgb(208, 208, 208);
     border-radius: 0.5rem;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     padding: 20px 20px 20px 20px;
 }
 
 .input-box input::placeholder {
-    color: white;
+    color: rgb(208, 208, 208);
 }
-
-.radio-gender {
-    padding-top: 1vh;
-    margin-bottom: 2vh;
-}
-
-.radio-gender label {
-    font-size: 16px;
-    color: white;
-}
-
 
 .box1 .input-comment{
     width: 100%;
@@ -313,15 +318,15 @@ footer {
     background: transparent;
     border: none;
     outline: none;
-    border: 1px solid white;
+    border: 1px solid rgb(208, 208, 208);
     border-radius: 0.5rem;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     padding: 10px 20px 20px 20px;
 }
 
 .input-comment textarea::placeholder {
-    color: white;
+    color: rgb(208, 208, 208);
 }
 
 .boxform .btnsubmit {
@@ -330,6 +335,661 @@ footer {
     padding: 10px;
     text-decoration: none;
     background: seagreen;
+    color: #fafafa;
+    border-radius: 5px;
+    border: none;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;   
+}
+
+body {
+    background: #fafafa;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.header span {
+    font-size: 32px;
+    color: #ffff;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #ffff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.iconsidebar {
+    display: none;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.cr-img1 {
+    background-image: url(./assets/image/carousel1.jpg);
+    background-size: cover;
+    height: 35rem;
+}
+
+.animate-txt .break {
+    width: 30rem;
+}
+
+.animate-txt {
+    padding-top: 18rem;
+}
+
+.animate-txt h1, .animate-txt p{
+    position: relative;
+    animation-name: animate1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate1 {
+    0%   {left:-900px; top:0px;}
+    100%  { left:100px; top:0px;}
+}
+
+.about{
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.aboutwrap{
+    display: flex;
+}
+
+.abouttxt {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.abouttxt h1{
+    margin-left: 15%;
+    padding-top: 15%;
+    margin-bottom: 5%;
+    color: black;
+}
+
+.abouttxt p{
+    margin-left: 15%;
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.aboutimg {
+    width: 50%;
+}
+
+.buttonabout{
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+    text-decoration: none;
+    background: seagreen;
+    color: #fafafa;
+    border-radius: 5px;
+    margin-left: 15%;
+}
+
+.aboutimg img {
+    width: 50%;
+    height: fit-content;
+    border-radius: 16px;
+    margin-left: 25%;
+}
+
+.section {
+    color: black;
+}
+
+.box1 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 8px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 16px;
+    margin: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+    text-decoration: none;
+    background: #2e8b57;
+    color: #fafafa;
+    border-radius: 5px;
+    margin-left: 200px;
+}
+
+.package {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.pk-wrap {
+    display: flex;
+}
+
+.pk-txt {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.pk-txt h1 {
+    margin-left: 6rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.pk-txt p {
+    margin-left: 6rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+.pk-img {
+    width: 50%;
+}
+
+.pk-grid {
+    display: grid;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    gap: 1rem;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 20rem 10rem;
+    grid-template-areas: 
+    'pk1 pk2'
+    'pk1 pk2'
+    'pk1 pk3';
+}
+
+.pk-grid-img1 {
+    grid-area: pk1;
+    background-image: url(./assets/image/photo2.jpeg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.pk-grid-img2 {
+    grid-area: pk2;
+    background-image: url(./assets/image/pinkbeach.jpeg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.pk-grid-img3 {
+    grid-area: pk3;
+    background-image: url(./assets/image/santamonica.jpg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.wrapper-boxfooter {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./assets/image/footer.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 10px 0;
+    display: flex;
+}
+
+.box-footer {
+    width: 50%;
+}
+
+.footer-link {
+    margin-left: 12vh;
+    color: white;
+    padding-top: 4vh;
+}
+
+.box-boxform {
+    width: 50%;
+    margin-right: 30vh;
+    margin-top: 4vh;
+}
+
+.boxform {
+    width: 90%;
+    background: transparent;
+    border: 2px solid rgb(208, 208, 208);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    margin: 20vh;
+    border-radius: 10px;
+    margin-top: 2vh;
+}
+
+.boxform .input-box {
+    width: 100%;
+    height: 6vh;
+    margin: 2vh 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: white;
+    padding: 20px 20px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+.box1 .input-comment{
+    width: 100%;
+    height: 10vh;
+}
+
+.input-comment textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px 20px 20px;
+}
+
+.input-comment textarea::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+.boxform .btnsubmit {
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background: seagreen;
+    color: #fafafa;
+    border-radius: 5px;
+    border: none;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    background: #fafafa;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: seagreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.header span {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.iconsidebar {
+    display: none;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.cr-img1 {
+    background-image: url(./assets/image/carousel1.jpg);
+    background-size: cover;
+    height: 35rem;
+}
+
+.animate-txt .break {
+    width: 30rem;
+}
+
+.animate-txt {
+    padding-top: 18rem;
+}
+
+.animate-txt h1, .animate-txt p {
+    position: relative;
+    animation-name: animate1;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate1 {
+    0% { left: -900px; top: 0px; }
+    100% { left: 100px; top: 0px; }
+}
+
+.about {
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.aboutwrap {
+    display: flex;
+}
+
+.abouttxt {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.abouttxt h1 {
+    margin-left: 15%;
+    padding-top: 15%;
+    margin-bottom: 5%;
+    color: black;
+}
+
+.abouttxt p {
+    margin-left: 15%;
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.aboutimg {
+    width: 50%;
+}
+
+.buttonabout {
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+    text-decoration: none;
+    background: seagreen;
+    color: #fafafa;
+    border-radius: 5px;
+    margin-left: 15%;
+}
+
+.aboutimg img {
+    width: 50%;
+    height: fit-content;
+    border-radius: 16px;
+    margin-left: 25%;
+}
+
+.section {
+    color: black;
+}
+
+.box1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px 5px 0 0;
+}
+
+.container {
+    padding: 2px 8px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 16px;
+    margin: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    font-size: 12px;
+    width: 160px;
+    padding: 10px;
+    text-decoration: none;
+    background: #2e8b57;
+    color: #fafafa;
+    border-radius: 5px;
+    margin-left: 200px;
+}
+
+.package {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.pk-wrap {
+    display: flex;
+}
+
+.pk-txt {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.pk-txt h1 {
+    margin-left: 6rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.pk-txt p {
+    margin-left: 6rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+}
+
+.pk-img {
+    width: 50%;
+}
+
+.pk-grid {
+    display: grid;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    gap: 1rem;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 20rem 10rem;
+    grid-template-areas: 
+        'pk1 pk2'
+        'pk1 pk2'
+        'pk1 pk3';
+}
+
+.pk-grid-img1 {
+    grid-area: pk1;
+    background-image: url(./assets/image/photo2.jpeg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.pk-grid-img2 {
+    grid-area: pk2;
+    background-image: url(./assets/image/pinkbeach.jpeg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.pk-grid-img3 {
+    grid-area: pk3;
+    background-image: url(./assets/image/santamonica.jpg);
+    border-radius: 0.5rem;
+    background-size: cover;
+    box-shadow: 3px 3px 2px #dfdede;
+}
+
+.wrapper-boxfooter {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./assets/image/footer.jpeg);
+    background-size: cover;
+    background-position: bottom;
+    padding: 10px 0;
+    display: flex;
+}
+
+.box-footer {
+    width: 50%;
+}
+
+.footer-link {
+    margin-left: 12vh;
+    color: white;
+    padding-top: 4vh;
+}
+
+.box-boxform {
+    width: 50%;
+    margin-right: 30vh;
+    margin-top: 4vh;
+}
+
+.boxform {
+    width: 90%;
+    background: transparent;
+    border: 2px solid rgb(208, 208, 208);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.boxform .input-box {
+    width: 100%;
+    height: 6vh;
+    margin: 2vh 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+}
+
+.input-box input::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+.box1 .input-comment {
+    width: 100%;
+    height: 10vh;
+}
+
+.input-comment textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(208, 208, 208);
+    border-radius: 0.5rem;
+    font-size: 14px;
+    color: white;
+    padding: 10px 20px;
+}
+
+.input-comment textarea::placeholder {
+    color: rgb(208, 208, 208);
+}
+
+.boxform .btnsubmit {
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    background: #2e8b57;
     color: #fafafa;
     border-radius: 5px;
     border: none;
