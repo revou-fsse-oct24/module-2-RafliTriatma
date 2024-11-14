@@ -7,7 +7,7 @@
 1. You need to wake up from your bed !!
 2. Gather Intention
 3. Turn on your device (laptop,pc, etc) and open your fav browser and write Niaga Hoster on search
-4. And you can custom your Domain 
+4. And you can custom your Domain. 
 
 ## How to Connect your Custom Domain
 1. You need to deploy your project in Netlify or Vercel
